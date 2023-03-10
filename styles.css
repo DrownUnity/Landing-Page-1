@@ -1,0 +1,132 @@
+html {
+  scroll-behavior: smooth;
+  background-color: rgb(52, 69, 147);
+  align-items: center;
+  font-family: 'Noto Sans', sans-serif;
+  color: rgba(0,0, 0, 0.8);
+  width: 100%;
+  }
+
+.line{
+  background-color: white;
+  top:0;
+}
+
+body{
+  background-color: white !important;
+  margin-block: 10px 10px;
+  width: 1400px;
+  margin-inline: auto;
+  margin-block:50px 50px;
+  padding-block: 20px 20px;
+  padding-inline: 30px 30px;
+  border-radius: 5px;
+}
+
+
+header {
+  margin-block: 30px 30px;
+  text-align: center;
+
+}
+
+h1{
+  font-size: 4rem;
+}
+
+header p {
+  font-size: 1.2rem;
+}
+
+.backgroundImage  {
+  width: 55rem;
+  height: auto;
+  margin: auto;
+}
+
+nav{
+  margin-block: 3rem 3rem;
+  padding-block: 2rem 2rem;
+  background-color: rgb(52, 69, 147);
+  position: relative;
+  width: 1500px;
+  margin-left: -2rem;
+  justify-content: center;
+}
+
+.menuItem{
+  text-decoration: none;
+  color: white !important;
+  margin-top: 100px;
+  padding-inline: 6rem 6rem ;
+  margin:auto;
+  transition: 0.5s;
+}
+
+.menuItem:hover{
+  font-size: 1.3rem;
+}
+
+.gif{
+  width: 25rem !important;
+  height: auto;
+}
+
+.serviciosContenido {
+  display: flex;
+}
+
+.nuestrosServicios{
+  display:block;
+}
+
+.nosotros, .contato {
+  margin-top: 3rem;
+}
+
+.form p{ 
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.formulario {
+  width: 200px;
+  display: grid;
+  margin:auto;
+}
+
+.item {
+  padding-block: 1rem 1rem ;
+  text-align: center;
+  margin-block: 1rem 1rem;
+  border: none;
+  border-bottom: 2px solid rgb(52, 69, 147);
+}
+
+.submit {
+  margin-top: 2rem !important;
+  height: 3rem;
+  width: 10rem;
+  margin: auto;
+  color: white !important;
+  background-color: rgb(52, 69, 147);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.submit:hover {
+  transform: scale(1.01);
+  box-shadow: 0rem 0rem 0.5rem black;
+}
+
+
+section p {
+  line-height: 30px;
+}
+
+article p {
+  margin-top: -10px;
+}
+

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="styles.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;500&display=swap" rel="stylesheet">        
+
+        <title>Lading Page </title>
+    </head>
+    <body>
+        <div class="line"></div>
+        <header>
+            <div class="intro">
+                <div class="introText"></div>
+                    <h1 class="Title">Lorem ipsum dolor</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur 
+                    adipisicing elit. Iure sint dolorem cum tempora, 
+                    ipsa ratione, voluptatum ipsum eaque odio minus dolorum 
+                    voluptatem quo fuga? Quibusdam quam earum harum perspiciatis sed!</p>
+                    </div>
+            </div>
+                <img class="backgroundImage" src="IMG/Foto.jpg">
+                
+            <nav class="menu">
+                <a href="#servicios" class="menuItem">Servicios</a>
+                <a href="#nosotros" class="menuItem">Nosotros</a>
+                <a href="#contacto"class="menuItem">Contacto</a>
+            </nav>
+        </header> 
+        <main>
+            <section class="servicios">
+                <h2 id="servicios">Servicios</h2>
+                <div class="serviciosContenido">
+                <img src="IMG/gif marketing.gif" class="gif"></img>
+                    <article class="nuestrosServicios">
+                        <h4>Community Management</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur 
+                            adipisicing elit. Iure sint dolorem cum tempora, 
+                            ipsa ratione, voluptatum ipsum eaque odio minus dolorum 
+                            voluptatem quo fuga? Quibusdam quam earum harum perspiciatis sed!</p>
+                        <h4>SEO y SEM</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur 
+                            adipisicing elit. Iure sint dolorem cum tempora, 
+                            ipsa ratione, voluptatum ipsum eaque odio minus dolorum 
+                            voluptatem quo fuga? Quibusdam quam earum harum perspiciatis sed!</p>
+                        <h4>Creación de Contenido</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur 
+                            adipisicing elit. Iure sint dolorem cum tempora, 
+                            ipsa ratione, voluptatum ipsum eaque odio minus dolorum 
+                            voluptatem quo fuga? Quibusdam quam earum harum perspiciatis sed!</p>
+                    </article>
+                </div>
+            </section>
+            <section class="nosotros">
+                <h2 id="nosotros">Nosotros</h2>
+                <p>Lorem ipsum dolor sit amet consectetur 
+                    adipisicing elit. Iure sint dolorem cum tempora, 
+                    ipsa ratione, voluptatum ipsum eaque odio minus dolorum 
+                    voluptatem quo fuga? Quibusdam quam earum harum perspiciatis sed!Lorem ipsum dolor sit amet consectetur 
+                    adipisicing elit. Iure sint dolorem cum tempora, 
+                    ipsa ratione, voluptatum ipsum eaque odio minus dolorum 
+                    voluptatem quo fuga? Quibusdam quam earum harum perspiciatis sed!Lorem ipsum dolor sit amet consectetur 
+                    adipisicing elit. Iure sint dolorem cum tempora, 
+                    ipsa ratione, voluptatum ipsum eaque odio minus dolorum 
+                    voluptatem quo fuga? Quibusdam quam earum harum perspiciatis sed!</p>
+            </section>
+            <section class="contacto">
+                <h2 id="contacto">Contacto</h2>
+                <div class="form">
+                    <p>¡Ponte en contacto con nosotros!</p>    
+                    <form class="formulario" id="form" action=""  >
+                        <input class="item" name="Nombre" placeholder="Nombre" required>
+                        <input class="item" name="Apellido" placeholder="Apellido" required>
+                        <input class="item" name="email" placeholder="Correo Electrónico" required type="email">
+                        <input class="item" name="number" placeholder="Número Telefónico" required type="number">
+                        <input class="submit" type="submit" value="Enviar"></input>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <script>
+            const form = document.querySelector("form")
+
+            form.addEventListener("submit", handleSubmit)
+
+            function handleSubmit(event) {
+                event.preventDefault()
+                new FormData(this)
+                console.log(form.get("Nombre"))
+            }
+        </script>
+    </body>
+</html>
